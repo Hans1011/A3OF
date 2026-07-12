@@ -1,20 +1,15 @@
-# A3OF
-An Autonomous, Apprehensible, and Accelerated Optimization Framework for Nanoparticle Interfacial Dynamics
 
-# An Autonomous, Apprehensible, and Accelerated Optimization Framework for Nanoparticle Interfacial Dynamics
+# A3OF-An Autonomous, Apprehensible, and Accelerated Optimization Framework for Nanoparticle Interfacial Dynamics
 
 This repository contains the source code, demonstration data, and documentation for an autonomous multi-agent framework designed to analyze and optimize nanoparticle interfacial dynamics.
 
 The framework integrates machine learning, SHAP-based model interpretation, scientific literature retrieval, multimodal evidence analysis, and large language model agents. It is designed to identify experimentally meaningful nonlinear associations between formulation variables and the interfacial behavior of magnetic nanoparticles.
 
-> This repository accompanies the manuscript  
-> **“An Autonomous, Apprehensible, and Accelerated Optimization Framework for Nanoparticle Interfacial Dynamics.”**
-
 ---
 
 ## Framework overview
 
-![Overview of the autonomous multi-agent optimization framework](docs/framework-overview.png)
+![Overview of the autonomous multi-agent optimization framework](docs/framework-overview.jpg)
 
 **Figure 1.** Overview of the proposed autonomous, apprehensible, and accelerated optimization framework. Experimental data, microscopy-derived descriptors, machine-learning predictions, SHAP interpretations, and scientific literature are processed by specialized agents to generate evidence-supported experimental associations and optimization recommendations.
 
