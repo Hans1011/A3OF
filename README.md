@@ -9,7 +9,7 @@ The framework integrates machine learning, SHAP-based model interpretation, scie
 
 ## Framework overview
 
-![Overview of the autonomous multi-agent optimization framework](docs/framework-overview.jpg)
+![Overview of the autonomous multi-agent optimization framework](framework-overview.jpg)
 
 **Figure 1.** Overview of the proposed autonomous, apprehensible, and accelerated optimization framework. Experimental data, microscopy-derived descriptors, machine-learning predictions, SHAP interpretations, and scientific literature are processed by specialized agents to generate evidence-supported experimental associations and optimization recommendations.
 
