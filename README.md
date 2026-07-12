@@ -1,5 +1,5 @@
 
-# A3OF-An Autonomous, Apprehensible, and Accelerated Optimization Framework for Nanoparticle Interfacial Dynamics
+# A3OF:An Autonomous, Apprehensible, and Accelerated Optimization Framework for Nanoparticle Interfacial Dynamics
 
 This repository contains the source code, demonstration data, and documentation for an autonomous multi-agent framework designed to analyze and optimize nanoparticle interfacial dynamics.
 
