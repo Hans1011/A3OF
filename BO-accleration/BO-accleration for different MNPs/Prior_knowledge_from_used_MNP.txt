@@ -1,0 +1,32 @@
+Water-oil interface SHAP summary (maximization): larger reward is better.
+Data overview: 168 valid experimental result(s) were used. Top 10% samples were treated as good samples.
+Top global importance by mean(|group SHAP|): Oil > Rwater > ROil.
+Best observed condition:
+- SW: LDEA
+- Rwater: 0.01
+- ROil: 0.01
+- Oil: 7500
+- SO: Pico-surf
+- Ion: 1.5
+- observed reward: 36.1556
+Feature-level qualitative interpretation:
+- SW: globally tends to DECREASE reward, harmful; among good samples, category pattern shows moderate preference; level importance ranking by mean(|SHAP|): ODEA > CDEA > LDEA.
+- Rwater: globally tends to INCREASE reward, beneficial; among good samples, values concentrate around the **low** range; within good samples, SHAP direction is tends to INCREASE reward, beneficial.
+- ROil: globally tends to DECREASE reward, harmful; among good samples, values concentrate around the **low** range; within good samples, SHAP direction is tends to INCREASE reward, beneficial.
+- Oil: globally tends to INCREASE reward, beneficial; among good samples, category pattern shows strong preference; level importance ranking by mean(|SHAP|): 7500 > PMX-20 > FC-40 > PMX-200 > PFPE > PMX-1000 > PMX-350 > mineral.
+- SO: globally tends to DECREASE reward, harmful; among good samples, category pattern shows strong preference; level importance ranking by mean(|SHAP|): Pico-surf > TEGO-410 > Perfluoro > AEO-5.
+- Ion: globally tends to DECREASE reward, harmful; among good samples, values concentrate around the **mid** range; within good samples, SHAP direction is tends to INCREASE reward, beneficial.
+The best repeated condition was tested 6 time(s), with mean reward 36.1074.
+Note: SHAP describes model-based contribution patterns, not direct causal effects. Use these trends as soft guidance for the next Bayesian optimization recommendation.
+
+Non-linear patterns (based on the six variables)
+
+- ion_concentration_in_water: Bell-shaped response. Performance peaks at an intermediate window (about 1.0–1.5), where images show uniform aggregates in oil with minimal residue and satellites. Both lower (<1.0) and higher (>1.5) concentrations degrade outcomes, evidenced by increased residue/satellites or loss of uniformity despite interface crossing.
+
+- ratio_of_surfactant_in_water: Threshold then plateau. Zero concentration is consistently detrimental even when crossing occurs (residue persists). Introducing a small, nonzero amount (0–0.1) produces a marked improvement (cleaner crossings, better uniformity), while further increases into 0.1–0.5 yield only modest additional gains.
+
+- ratio_of_surfactant_in_oil: Step-change with mid-range benefit. Absence of surfactant is harmful (residue and/or non-uniform clusters). Small additions (0–0.1) noticeably improve transfer quality, and moving to a moderate range (0.1–0.5) tends to provide the cleanest crossings with good uniformity, indicating a non-linear jump rather than a gradual linear trend.
+
+- oil_type: Strong categorical discontinuities. One oil (7500) consistently yields superior outcomes with clean, uniform clusters; PMX-20 is also beneficial. In contrast, several others (e.g., FC-40, PFPE, PMX-200, PMX-350, mineral) systematically hinder clean transfer (extensive residue or higher satellite fractions). Differences within the silicone family (PMX-20 vs PMX-200/350) underscore non-linear category effects rather than any simple ordering.
+
+Very important constraint: Due to the specific nature of the target biomarker, no ion (NaCl) or surfactant is allowed in the aqueous phase. Please make sure to strictly consider this constraint when recommending sampling points.Any proposed points should follow the rules.
