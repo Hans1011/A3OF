@@ -1,0 +1,29 @@
+image,phase,cluster_uniformity,residue_level,interface_cross,satellite_cluster_ratio
+./test\3.jpg,oil phase,yes,very little,yes,low
+./test\6.jpg,oil phase,yes,extensive,yes,low
+./test\7.jpg,oil phase,yes,very little,yes,low
+./test\8.jpg,oil phase,yes,extensive,yes,low
+./test\9.jpg,oil phase,yes,no,yes,none
+./test\10.jpg,oil phase,yes,extensive,yes,low
+./test\11.jpg,oil phase,no,extensive,yes,none
+./test\12.jpg,oil phase,yes,extensive,yes,high
+./test\16.jpg,oil phase,yes,extensive,yes,high
+./test\17.jpg,oil phase,yes,extensive,yes,low
+./test\18.jpg,oil phase,yes,very little,yes,low
+./test\19.jpg,oil phase,yes,very little,yes,high
+./test\21.jpg,oil phase,no,extensive,yes,none
+./test\22.jpg,oil phase,yes,very little,yes,low
+./test\23.jpg,oil phase,yes,very little,yes,low
+./test\24.jpg,oil phase,yes,very little,yes,low
+./test\25.jpg,oil phase,no,extensive,yes,low
+./test\26.jpg,oil phase,yes,very little,yes,low
+./test\27.jpg,oil phase,yes,extensive,yes,low
+./test\28.jpg,oil phase,yes,very little,yes,none
+./test\29.jpg,oil phase,yes,very little,yes,low
+./test\31.jpg,oil phase,no,very little,yes,none
+./test\32.jpg,oil phase,yes,very little,yes,low
+./test\33.jpg,oil phase,yes,no,yes,none
+./test\34.jpg,oil phase,no,very little,yes,none
+./test\35.jpg,oil phase,yes,very little,yes,low
+./test\36.jpg,oil phase,yes,no,yes,none
+./test\37.jpg,oil phase,yes,very little,yes,none
